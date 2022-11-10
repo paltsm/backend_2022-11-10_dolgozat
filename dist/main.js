@@ -1,0 +1,1 @@
+(()=>{"use strict";(()=>{function e(){let e=document.getElementById("title").value;document.getElementById("kimenet").textContent=e}document.addEventListener("DOMContentLoaded",(function(){var t;null===(t=document.getElementById("felvetel"))||void 0===t||t.addEventListener("click",e)}))})()})();
