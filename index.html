@@ -9,16 +9,19 @@
 </head>
 <body>
 	<main>
-		<label for="title">név: </label>
-		<input type="text" name="title" id="title"><br>
-		<label for="year">év: </label>
-		<input type="number" name="year" id="year"><br>
-		<label for="price">ár: </label>
-		<input type="number" name="price" id="price"><br>
-		<label for="height">magasság: </label>
-		<input type="number" name="height" id="height"><br>
-		<button type="submit" id="felvetel">felvétel</button>
+		<form>
+			<label for="title">név: </label>
+			<input type="text" name="title" id="title" autocomplete="off"><br>
+			<label for="year">év: </label>
+			<input type="number" name="year" id="year" min="1"><br>
+			<label for="price">ár: </label>
+			<input type="number" name="price" id="price"><br>
+			<label for="height">magasság: </label>
+			<input type="number" name="height" id="height" min="20"><br>
+			<button type="submit" id="felvetel">felvétel</button>
+
+		</form>
 	</main>
-	<p id="kimenet"></p>
+	<ul id="kimenet"></ul>
 </body>
 </html>
