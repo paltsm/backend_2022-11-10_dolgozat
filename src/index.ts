@@ -21,28 +21,35 @@ function felvetel() {
 	// (document.getElementById('kimenet') as HTMLElement).textContent = aa;
 	title();
 	year();
+	price();
+	height();
 }
 function title() : boolean{
-	let title = (document.getElementById('kimenet') as HTMLElement).textContent;
+	let title = (document.getElementById('title') as HTMLInputElement).value;
 	if (title==null){
-		// (document.getElementById('kimenet') as HTMLElement).textContent = "hulye";
 		return false;
 	}else{
-		// (document.getElementById('kimenet') as HTMLElement).textContent = "sksks";
 		let reg:RegExp=/[a-z ,-]+/g;
-		console.log(reg.test(title));
+		// console.log(reg.test(title))
 		return reg.test(title);
 
 	}
 }
 function year(){
-	console.log("okos")
+	console.log("---year")
+	let year =parseInt((document.getElementById('year') as HTMLInputElement).value);
+	if(year>2022){
+		return false;
+	}else{
+		console.log(year<2022);
+		return true;
+	}
 }
 function price(){
-
+	console.log("---price")
 }
 function height(){
-
+	console.log("---height")
 }
 
 
