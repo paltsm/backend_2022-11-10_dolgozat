@@ -1,9 +1,4 @@
-// import {Artwork} from "./artwork"
-export interface Artwork{
-	title: string;
-	year: Date;
-	price: number;
-}
+import {Artwork} from "./Artwork"
 
 class Statue implements Artwork{
 	title: string;
@@ -17,4 +12,6 @@ class Statue implements Artwork{
 		this.price=price;
 		this.height=height;
 	}
+	
 }
+let artworks : Artwork[]=[];
